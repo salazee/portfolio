@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Div Content</title>
+</head>
+<!-- <body>
+    randomWord[Math.floor(Math.random()*randomWord.length);
+  var  pickRandomWord = function(words){
+    return words[Math.floor(Math.random()*words.length)];
+  };
+  var randomWords = ["Planet", "Worm", "Flower", "Computer"];
+pickRandomWord(randomWords); -->
+<script>
+var randomBodyParts = ["Face", "Nose", "Hair"];
+var randomAdjectives = ["Smelly", "Boring", "Stupid"];
+var randomWords = ["Fly", "Marmot", "Stick", "Monkey", "Rat"];
+var pickRandomWord = function(words){
+    return words[Math.floor(Math.random()*words.length)];
+};
+var randomString = "Your "+pickRandomWord(randomBodyParts)
+ +" is like a "+ pickRandomWord(randomAdjectives) +(" ")+ 
+ pickRandomWord(randomWords)+(".") 
+randomString;
+</script>
+<!--  I copied the code above to the console.It output but it is repetitive of the same words. I space it but it is still the same.-->
+
+</body>
+</html>
